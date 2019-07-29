@@ -7,7 +7,7 @@ sap.ui.define([
 ], function (Controller, History, MessageToast, JSONModel, UIComponent) {
 	"use strict";
 
-	return Controller.extend("sap.ui.demo.walkthrough.controller.Detail", {
+	return Controller.extend("terragene.aprobentrega.controller.Detail", {
 		onInit: function () {
 			var oViewModel = new JSONModel({
 				currency: "EUR"

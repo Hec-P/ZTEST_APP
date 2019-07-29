@@ -4,7 +4,7 @@ sap.ui.define([
 	"use strict";
 
 	new ComponentContainer({
-		name : "sap.ui.demo.walkthrough",
+		name : "terragene.aprobentrega",
 		settings : {
 			id : "walkthrough"
 		},

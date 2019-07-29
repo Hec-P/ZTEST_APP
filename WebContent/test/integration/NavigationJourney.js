@@ -1,7 +1,7 @@
 /*global QUnit, opaTest*/
 
 sap.ui.define([ 
-	"sap/ui/demo/walkthrough/localService/mockserver",
+	"terragene/aprobentrega/localService/mockserver",
 	"sap/ui/test/opaQunit",
 	"./pages/App" 
 ], function(mockserver) {
@@ -16,7 +16,7 @@ sap.ui.define([
 		// Arrangements
 		Given.iStartMyUIComponent({
 			componentConfig : {
-				name : "sap.ui.demo.walkthrough"
+				name : "terragene.aprobentrega"
 			}
 		});
 

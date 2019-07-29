@@ -5,7 +5,7 @@ sap.ui.getCore().attachInit(function() {
 	"use strict";
 
 	sap.ui.require([ 
-		"sap/ui/demo/walkthrough/test/integration/NavigationJourney" 
+		"terragene/aprobentrega/test/integration/NavigationJourney" 
 	], function() {
 		QUnit.start();
 	});

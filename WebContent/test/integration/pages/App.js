@@ -4,7 +4,7 @@ sap.ui.define([
 ], function(Opa5, Press) {
 	"use strict";
 
-	var sViewName = "sap.ui.demo.walkthrough.view.HelloPanel";
+	var sViewName = "terragene.aprobentrega.view.HelloPanel";
 
 	Opa5.createPageObjects({
 		onTheAppPage : {

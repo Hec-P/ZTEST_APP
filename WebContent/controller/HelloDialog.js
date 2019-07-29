@@ -5,7 +5,7 @@ sap.ui.define([
 ], function(ManagedObject, Fragment, syncStyleClass) {
 	"use strict";
 
-	return ManagedObject.extend("sap.ui.demo.walkthrough.controller.HelloDialog", {
+	return ManagedObject.extend("terragene.aprobentrega.controller.HelloDialog", {
 
 		constructor : function(oView) {
 			this._oView = oView;
@@ -31,7 +31,7 @@ sap.ui.define([
 						{
 							id : oView
 							.getId(),
-							name : "sap.ui.demo.walkthrough.view.HelloDialog",
+							name : "terragene.aprobentrega.view.HelloDialog",
 							controller : oFragmentController
 						}).then(function(oDialog) {
 							

@@ -7,7 +7,7 @@ sap.ui.define([
 ], function(Controller, JSONModel, formatter, Filter, FilterOperator) {
 	"use strict";
 
-	return Controller.extend("sap.ui.demo.walkthrough.controller.InvoiceList", {
+	return Controller.extend("terragene.aprobentrega.controller.InvoiceList", {
 
 		formatter: formatter,
 		

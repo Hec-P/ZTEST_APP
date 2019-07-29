@@ -6,7 +6,7 @@ sap.ui.define([
 ], function (Control, RatingIndicator, Label, Button) {
 	"use strict";
 	
-	return Control.extend("sap.ui.demo.walkthrough.control.ProductRating", {
+	return Control.extend("terragene.aprobentrega.control.ProductRating", {
 		metadata : {
 			properties : {
 				value: 	{type : "float", defaultValue : 0}

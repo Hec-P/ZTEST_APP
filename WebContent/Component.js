@@ -6,7 +6,7 @@ sap.ui.define([
 ], function(UIComponent, JSONModel, HelloDialog, Device) {
 	"use strict";
 
-	return UIComponent.extend("sap.ui.demo.walkthrough.Component", {
+	return UIComponent.extend("terragene.aprobentrega.Component", {
 		metadata : {
 			manifest: "json"
 		},

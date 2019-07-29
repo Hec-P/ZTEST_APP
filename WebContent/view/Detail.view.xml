@@ -1,7 +1,7 @@
 <core:View xmlns:core="sap.ui.core"
-	controllerName="sap.ui.demo.walkthrough.controller.Detail"
+	controllerName="terragene.aprobentrega.controller.Detail"
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-	xmlns:wt="sap.ui.demo.walkthrough.control"
+	xmlns:wt="terragene.aprobentrega.control"
 	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true">
 
 	<Page title="{i18n>detailPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
