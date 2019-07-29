@@ -6,7 +6,7 @@ sap.ui.define([
 	new ComponentContainer({
 		name : "terragene.aprobentrega",
 		settings : {
-			id : "walkthrough"
+			id : "aprobentrega"
 		},
 		async : true
 	}).placeAt("content");
