@@ -1,0 +1,12 @@
+{
+	"name": "Sample-Package",
+	"version": "1.0.0",
+	"description": "Sample package.json",
+	"scripts": {
+		"proxy": "node proxy.js"
+	},
+	"devDependencies": {
+		"cors-anywhere": "^0.4.1"
+	},
+	"dependencies": {}
+}

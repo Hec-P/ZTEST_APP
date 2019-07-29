@@ -1,0 +1,16 @@
+<core:View xmlns:core="sap.ui.core"
+	controllerName="sap.ui.demo.walkthrough.controller.App"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+
+	<Page title="{i18n>homePageTitle}">
+		<headerContent>
+			<Button icon="sap-icon://hello-world" press=".onOpenDialog" />
+		</headerContent>
+		<content>
+			<mvc:XMLView viewName="sap.ui.demo.walkthrough.view.HelloPanel" />
+			<mvc:XMLView viewName="sap.ui.demo.walkthrough.view.InvoiceList" />
+		</content>
+	</Page>
+
+</core:View>
