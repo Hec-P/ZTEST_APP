@@ -18,7 +18,7 @@
 					<Text text="{/VBELN}"/>
 				</contentRight>
 			</Bar>
-			<List id="idList1" items="{/Entrega_cabSet}">
+			<List id="idList1" items="{/results}">
 			<items>
 				<StandardListItem title="{VBELN}" />
 			</items>

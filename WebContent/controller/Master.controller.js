@@ -13,7 +13,7 @@ sap.ui.define([
 		formatter: formatter,
 		
 		onInit : function() {
-			
+			var list = this.getView().byId("idList2");
 			//Load OData Service
 			//var sURL = "http://localhost:8081/https://dev.terragene.com.ar/sap/opu/odata/sap/zsd_entrega_aprob_1_srv/";
 			var sURL = "https://dev.terragene.com.ar/sap/opu/odata/sap/zsd_entrega_aprob_1_srv/";
@@ -32,10 +32,29 @@ sap.ui.define([
 			var oJsonModel = new JSONModel();
 			
 			var servicioUrl = "/Entrega_cabSet?"
-			oDataModel.read(servicioUrl, function(oData, response) {
-				oJsonModel.setData(oData);
+			oDataModel.read(servicioUrl, {
+				success : function(data) {
+					//Read output
+					alert(data);
+					alert(data.results);
+					var result = data.results;
+				
+					//set JSONoutput to a JSONModel
+					oJsonModel.setData({
+						listItems : result
+					});
+					
+					list.setModel(oJsonModel);
+				}, 
+				error : function(err) {
+					alert(err);
+					alert(err.message);
+					var errTxt = err.message + "\n" + err.request.requestUri;
+					sap.m.MessageBox.show(errTxt, sap.m.MessageBox.Icon.ERROR, "Service Error");
+				}
 			});
-			sap.ui.getCore().setModel(oJsonModel)
+			
+			sap.ui.getCore().setModel(oJsonModel, "listItems")
 			
 			
 /*			//Call OdataService
