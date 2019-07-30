@@ -48,7 +48,7 @@
 						path: 'invoice>Status',
 						formatter: '.formatter.statusText'
 					}"/>
-					<Text text="{invoice>ShipperName}"/>
+					<Text text="{oDataModel>VBELN}"/>
 					<ObjectNumber
 						number="{
 							parts: [{path: 'invoice>ExtendedPrice'}, {path: 'view>/currency'}],

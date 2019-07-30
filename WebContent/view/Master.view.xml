@@ -1,0 +1,33 @@
+<core:View xmlns:core="sap.ui.core"
+	controllerName="terragene.aprobentrega.controller.Master"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+
+			<Bar>
+				<contentLeft>
+					<Button text="GetMaterial" press="pressODataSrv" type="Accept" />
+				</contentLeft>
+				<contentRight>
+					<Text text="Hola"/>
+					<Text text="{/Entrega_cabSet}"/>
+					<Text text="{/Entrega_cab}"/>
+					<Text text="{Entrega_cabSet}"/>
+					<Text text="{Entrega_cabSet/VBELN}"/>
+					<Text text="{/Entrega_cabSet>/VBELN}"/>
+					<Text text="{Entrega_cabSet>VBELN}"/>
+					<Text text="{/VBELN}"/>
+				</contentRight>
+			</Bar>
+			<List id="idList1" items="{/Entrega_cabSet}">
+			<items>
+				<StandardListItem title="{VBELN}" />
+			</items>
+			</List>
+	
+			<List id="idList2" items="{/listItems}">
+			<items>
+				<StandardListItem title="{VBELN}" />
+			</items>
+			</List>
+	
+</core:View>

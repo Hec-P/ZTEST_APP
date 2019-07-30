@@ -3,8 +3,9 @@ sap.ui.define([
 	"sap/ui/model/json/JSONModel",
 	"../model/formatter",
 	"sap/ui/model/Filter",
-	"sap/ui/model/FilterOperator"
-], function(Controller, JSONModel, formatter, Filter, FilterOperator) {
+	"sap/ui/model/FilterOperator",
+	"sap/ui/model/odata/v2/ODataModel"
+], function(Controller, JSONModel, formatter, Filter, FilterOperator, ODataModel) {
 	"use strict";
 
 	return Controller.extend("terragene.aprobentrega.controller.InvoiceList", {
@@ -12,6 +13,18 @@ sap.ui.define([
 		formatter: formatter,
 		
 		onInit : function() {
+			
+			var sURL = "http://localhost:8081/https://dev.terragene.com.ar/sap/opu/odata/sap/zsd_entrega_aprob_1_srv/"
+			
+			var oDataModel = new ODataModel(sURL, {
+			     user : "rjerez",
+			     password : "Pipobi2018",
+			     headers : {
+			    	 Authorization : "Basic cmplcmV6OlBpcG9iaTIwMTg="
+			     }
+			});
+			this.getView().setModel(oDataModel, "oDataModel");
+			
 			var oViewModel = new JSONModel({
 				currency : "EUR"
 			});

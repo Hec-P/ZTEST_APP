@@ -8,15 +8,6 @@
 		"description": "{{appDescription}}",
 		"applicationVersion": {
 			"version": "1.0.0"
-		},
-		"dataSources": {
-			"invoiceRemote": {
-				"uri": "http://localhost:8081/https://services.odata.org/V2/Northwind/Northwind.svc/",
-				"type": "OData",
-				"settings": {
-					"odataVersion": "2.0"
-				}
-			}
 		}
 	},
 	"sap.ui": {
@@ -52,9 +43,6 @@
 				"settings": {
 					"bundleName": "terragene.aprobentrega.i18n.i18n"
 				}
-			},
-			"invoice": {
-				"dataSource": "invoiceRemote"
 			}
 		},
 		"resources": {

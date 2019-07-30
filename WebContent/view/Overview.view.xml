@@ -8,7 +8,10 @@
 			<Button icon="sap-icon://hello-world" press=".onOpenDialog" />
 		</headerContent>
 		<content>
+		<!-- 
 			<mvc:XMLView viewName="terragene.aprobentrega.view.InvoiceList" />
+		 -->
+			<mvc:XMLView viewName="terragene.aprobentrega.view.Master" />
 		</content>
 	</Page>
 
