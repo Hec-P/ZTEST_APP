@@ -3,6 +3,34 @@
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 
+	<Table id="invoiceList" class="sapUiResponsiveMargin" width="auto" 
+			items="{
+				path : 'invoice>/Entrega_cabSet'
+			}">
+
+		<headerToolbar>
+			<Toolbar>
+				<Title text="{i18n>invoiceListTitle}" />
+				<ToolbarSpacer />
+				<SearchField width="50%" search=".onFilterInvoices" />
+			</Toolbar>
+		</headerToolbar>
+
+		<columns>
+			<Column hAlign="End" minScreenWidth="Small" demandPopin="true" width="4em">
+				<Text text="{i18n>columnQuantity}"/>
+			</Column>
+		</columns>
+
+		<items>
+			<ColumnListItem type="Navigation" press=".onPress">
+				<cells>
+					<Text text="{invoice>VBELN}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+
 	<List id="idList2" items="{/listaEntregas}">
 		<items>
 			<StandardListItem title="{VBELN}" />

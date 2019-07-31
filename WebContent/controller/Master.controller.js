@@ -16,7 +16,7 @@ sap.ui.define([
 			
 			var oDataModel = this.getOwnerComponent().getModel("invoice")
 			
-			var servicioUrl = "/Entrega_cabSet?"
+			var servicioUrl = "/Entrega_cabSet"
 			oDataModel.read(servicioUrl, {
 				success : function(data) {
 					//Read output
