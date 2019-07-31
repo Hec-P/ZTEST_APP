@@ -14,10 +14,7 @@
 				"uri": "https://dev.terragene.com.ar/sap/opu/odata/sap/zsd_entrega_aprob_1_srv/",
 				"type": "OData",
 				"settings": {
-					"odataVersion": "2.0",
-					"headers": {
-						"Authorization": "Basic cmplcmV6OlBpcG9iaTIwMTg="
-					}
+					"odataVersion": "2.0"
 				}
 			}
 		}
