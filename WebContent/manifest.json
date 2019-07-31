@@ -8,6 +8,18 @@
 		"description": "{{appDescription}}",
 		"applicationVersion": {
 			"version": "1.0.0"
+		},
+		"dataSources": {
+			"invoiceRemote": {
+				"uri": "https://dev.terragene.com.ar/sap/opu/odata/sap/zsd_entrega_aprob_1_srv/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"headers": {
+						"Authorization": "Basic cmplcmV6OlBpcG9iaTIwMTg="
+					}
+				}
+			}
 		}
 	},
 	"sap.ui": {
@@ -43,6 +55,9 @@
 				"settings": {
 					"bundleName": "terragene.aprobentrega.i18n.i18n"
 				}
+			},
+			"invoice": {
+				"dataSource": "invoiceRemote"
 			}
 		},
 		"resources": {
